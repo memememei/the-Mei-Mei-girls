@@ -1,0 +1,148 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'IBM Plex Mono';
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html,
+body,
+main {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #FFF6E3;
+}
+
+section {
+    height: 15vh;
+}
+
+.container {
+    background-color: #FF77B7;
+    padding: 2rem;
+}
+
+.container h1 {
+    font-family: 'Quarant';
+    font-size: 4rem;
+    color: #FFF6E3;
+    text-shadow: red 2px 5px;
+}
+
+.container p {
+    font-family: 'Moon 2.0';
+    color: #FFF6E3;
+    width: 90%;
+    margin: 1.5rem 0;
+}
+
+.back-link a {
+    width: 18vw;
+    height: 10vh;
+    font-family: 'Quarant';
+    font-size: 1.5vw;
+    color: #000;
+    background-color: #ffffff;
+    border: 4px solid;
+    border-radius: 80px;
+    display: grid;
+    place-items: center;
+    transition: .6s;
+    position: relative;
+    text-decoration: none;
+    margin-top: 5vh;
+    margin-left: auto;
+    /* aリンクを右寄せ */
+}
+
+.back-link a:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+.scroll_container {
+    margin-top: 10vw;
+    height: 200vh;
+}
+
+.sticky_wrap {
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.horizontal_scroll {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    will-change: transform;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+}
+
+.character-photos {
+    width: 25vw;
+    height: 30vw;
+    border-radius: 30%;
+    /*角を丸くする*/
+    background-color: #f7f7f7;
+    border: 0.3rem solid;
+    border-color: black;
+    position: relative;
+    /* relativeにして子要素のabsolute配置を基準に */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7vw;
+}
+
+.character-number {
+    background-color: #FF77B7;
+    width: 5vw;
+    height: 5vw;
+    margin: 2.5rem;
+    border-radius: 50%;
+    border: 0.2rem solid;
+    border-color: red;
+    position: absolute;
+    /* 固定位置 */
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.character-number p {
+    text-align: center;
+    font-family: 'Archive';
+    font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
+    color: #FFF6E3;
+}
+
+.character-image {
+    position: absolute;
+    /* 親要素の中央に配置するためabsoluteに */
+    top: 60%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+
+}
+
+.character-image img {
+    width: 18vw;
+    height: 18vw;
+}
+
+.img {
+    width: 30vw;
+    object-fit: cover;
+    object-position: center;
+}

@@ -1,0 +1,61 @@
+/* 基本スタイル */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    overflow-x: hidden; /* 横スクロールバーを非表示 */
+}
+
+.characters {
+    width: 300vw; /* 横にコンテンツを広げる */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px 0;
+}
+
+.title-wrapper {
+    width: 100vw;
+    text-align: center;
+}
+
+.text-title {
+    font-size: 80px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.text-body {
+    font-size: 20px;
+    color: #555;
+}
+
+.girls {
+    display: flex;
+    gap: 50px;
+    margin-left: 10vw;
+}
+
+.girl1, .girl2, .girl3 {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.girls p a img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.girls p a img:hover {
+    transform: scale(1.1); /* ホバー時に画像を拡大 */
+}
