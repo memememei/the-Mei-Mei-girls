@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(242, 196, 208);
+}
+
+.home {
+    background-image: url('background.png');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    /* 100%にする場合、親のhtml, bodyが100%必要 */
+    position: relative;
+}
+
+.top {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    position: relative;
+}
+
+.slideinTop {
+    position: absolute;
+    animation: slideinTop 1s;
+}
+
+.slideinTop img {
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes slideinTop {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.slideinLeft {
+    margin-left: 30px;
+    margin-top: 20px;
+    animation: slideinLeft 1s;
+    position: absolute;
+}
+
+.slideinLeft img {
+    width: 10vw;
+}
+
+@keyframes slideinLeft {
+    0% {
+        transform: translateX(-300px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slideinLeft2 {
+    left: 5vw;
+    top: 20vh;
+    animation: slideinLeft 1s;
+    position: absolute;
+}
+
+.slideinLeft2 img {
+    width: 15vw;
+}
+
+@keyframes slideinLeft2 {
+    0% {
+        transform: translateX(-300px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slideinLeft3 {
+    left: 8vw;
+    top: 65vh;
+    animation: slideinLeft 1s;
+    position: absolute;
+}
+
+.slideinLeft3 img {
+    width: 13vw;
+}
+
+@keyframes slideinLeft2 {
+    0% {
+        transform: translateX(-300px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slideinBottom {
+    margin-right: auto;
+    margin-left: auto;
+    animation: slideinBottom 1s;
+}
+
+.slideinBottom img {
+    width: 43vw;
+}
+
+@keyframes slideinBottom {
+    0% {
+        transform: translateY(500px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.slideinRight {
+    animation: slideinRight 1s;
+    position: absolute;
+    top: 10vh;
+    right: 3vw;
+}
+
+.slideinRight img {
+    width: 15vw;
+}
+
+@keyframes slideinRight {
+    0% {
+        transform: translateX(30vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slideinRight2 {
+    animation: slideinRight 1s;
+    position: absolute;
+    top: 60vh;
+    right: 8vw;
+}
+
+.slideinRight2 img {
+    width: 15vw;
+}
+
+@keyframes slideinRight {
+    0% {
+        transform: translateX(30vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.bottom {
+    width: 20vw;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.link a {
+    width: 18vw;
+    height: 10vh;
+    font-family: 'Quarant';
+    font-size: 1.5vw;
+    color: #000;
+    background-color: #ffffff;
+    border: 4px solid;
+    border-radius: 80px;
+    display: grid;
+    place-items: center;
+    transition: .6s;
+    position: relative;
+    text-decoration: none;
+    margin-top: 5vh;
+}
+
+.link a:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+.characters {
+    padding-top: 100px;
+    padding-bottom: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    position: static;
+}
+
+.tittle-wrapper {
+    width: 35vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-tittle {
+    font-family: 'Quarant';
+    font-size: 80px;
+    color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.text-body {
+    font-family: 'Moon 2.0';
+    color: #ffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.girls {
+    display: flex;
+    margin-top: 80px;
+    position: static;
+}
+
+.girl1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 70px;
+    /*角を丸くする*/
+    background-color: #fff;
+}
+
+.girls p a {
+    width: 250px;
+    display: block;
+}
+
+.girls p a img {
+    width: 250px;
+    position: relative;
+    left: 25px;
+    top: 30px;
+}
+
+.girls p a img:hover {
+    top: -1px;
+    transition: 0.3s;
+}
+
+.girl2 {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 70px;
+    /*角を丸くする*/
+    background-color: #fff;
+}
+
+.girl3 {
+    width: 300px;
+    height: 300px;
+    border-radius: 70px;
+    /*角を丸くする*/
+    background-color: #fff;
+}
+
+.items {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 300px;
+}
+
+.item-tittle-wrapper {
+    width: 35vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item-tittle-wrapper h1 {
+    font-family: 'Quarant';
+    font-size: 100px;
+    color: #000000;
+}
+
+.item-body {
+    display: flex;
+    margin-top: 80px;
+    position: static;
+}
+
+.phone {
+    display: flex;
+}
+
+.alien {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item-body p a {
+    width: 400px;
+    display: block;
+}
+
+.item-body p a img {
+    width: 400px;
+    position: relative;
+    left: 25px;
+    top: 30px;
+}
+
+.item-body p a img:hover {
+    top: -1px;
+    transition: 0.3s;
+}
+
+.contents-bottom {
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.profile {
+    width: 30vw;
+    height: 90vh;
+    border-radius: 80px;
+    background-color: #ffff;
+    border: 7px solid;
+}
+
+.profile p {
+    position: absolute;
+    font-family: 'Quarant';
+    font-size: 70px;
+    color: #000000;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.about {
+    width: 30vw;
+    height: 90vh;
+    border-radius: 80px;
+    margin-left: 100px;
+    background-color: #ffff;
+    border: 7px solid;
+}
+
+.about p {
+    position: absolute;
+    font-family: 'Quarant';
+    font-size: 70px;
+    color: #000000;
+    padding-left: 80px;
+    padding-top: 50px;
+}
+
+.footer {
+    width: 100%;
+    height: 30vh;
+    margin-top: 100px;
+    background-color: #ffff;
+    display: flex;
+}
+
+.footer-section {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 6vw;
+    padding-left: 6vw;
+    padding-top: 5vw;
+    display: flex;
+}
+
+.footer-left {
+    width: 30vw;
+    left: 10px;
+}
+
+.footer-left img {
+    width: 12vw;
+}
+
+.footer-right {
+    width: 50vw;
+    padding-left: 500px;
+    font-family: 'Moon 2.0';
+    display: flex;
+}
+
+.info {
+    width: 7vw;
+}
+
+.products {
+    width: 7vw;
+
+}
+
+.sns {
+    width: 10vw;
+}
+
+.sns p {
+    font-family: 'Moon 2.0';
+    margin-bottom: 15px;
+
+}
+
+.sns img {
+    width: 1.5vw;
+}
